@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Career Results | CareerLens AI</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CareerLens <span>AI</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="assessment.html">
+                Profile
+            </a>
+
+            <a href="skills.html">
+                Skills
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         RESULT PAGE
+    ========================== -->
+
+    <section class="result-page">
+
+
+        <!-- RESULT HEADER -->
+
+        <div class="result-header">
+
+            <p class="section-label">
+                STEP 3 OF 3
+            </p>
+
+            <h1>
+                Your Career
+                <span>Insights</span>
+            </h1>
+
+            <p>
+                Based on your interests, education and current skills,
+                CareerLens AI has created your personalized career profile.
+            </p>
+
+        </div>
+
+
+
+        <!-- =========================
+             WELCOME CARD
+        ========================== -->
+
+        <div class="welcome-card">
+
+            <div>
+
+                <p class="small-label">
+                    WELCOME
+                </p>
+
+                <h2 id="userName">
+                    Student
+                </h2>
+
+                <p>
+                    Here is your personalized CareerLens AI analysis.
+                </p>
+
+            </div>
+
+            <div class="career-icon">
+                🎯
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             CAREER RESULT
+        ========================== -->
+
+        <div class="career-result-card">
+
+            <div class="career-result-content">
+
+                <p class="small-label">
+                    TOP CAREER MATCH
+                </p>
+
+                <h2 id="careerName">
+                    Loading...
+                </h2>
+
+                <p id="careerDescription">
+                    Analyzing your profile...
+                </p>
+
+            </div>
+
+
+            <div class="match-score">
+
+                <div
+                    class="score-number"
+                    id="matchScore"
+                >
+                    0%
+                </div>
+
+                <p>
+                    Match Score
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             STRENGTHS + SKILL GAPS
+        ========================== -->
+
+        <div class="result-grid">
+
+
+            <!-- STRENGTHS -->
+
+            <div class="result-card">
+
+                <div class="result-card-icon">
+                    💪
+                </div>
+
+                <h3>
+                    Your Strengths
+                </h3>
+
+                <ul id="strengthList">
+
+                    <li>
+                        Analyzing your skills...
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- SKILL GAPS -->
+
+            <div class="result-card">
+
+                <div class="result-card-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Skill Gaps
+                </h3>
+
+                <ul id="gapList">
+
+                    <li>
+                        Analyzing your career requirements...
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             CAREER ROADMAP
+        ========================== -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-header">
+
+                <div>
+
+                    <p class="small-label">
+                        YOUR PERSONALIZED PLAN
+                    </p>
+
+                    <h2>
+                        🗺️ Career Roadmap
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="roadmap">
+
+
+                <div class="roadmap-step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Build Your Foundation
+                        </h3>
+
+                        <p>
+                            Strengthen your fundamental technical
+                            and problem-solving skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="roadmap-step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Learn Required Skills
+                        </h3>
+
+                        <p>
+                            Focus on the skills identified in
+                            your personalized skill-gap analysis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="roadmap-step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Build Real Projects
+                        </h3>
+
+                        <p>
+                            Create practical projects to demonstrate
+                            your skills to recruiters.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="roadmap-step">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Prepare for Interviews
+                        </h3>
+
+                        <p>
+                            Practice technical questions,
+                            communication and mock interviews.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             PROJECT RECOMMENDATIONS
+        ========================== -->
+
+        <div class="project-card">
+
+            <p class="small-label">
+                BUILD YOUR PORTFOLIO
+            </p>
+
+            <h2>
+                🚀 Recommended Projects
+            </h2>
+
+
+            <div class="project-list">
+
+
+                <div class="project-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Personal Portfolio Website
+                        </h3>
+
+                        <p>
+                            Showcase your skills, projects and achievements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="project-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            AI-Powered Data Dashboard
+                        </h3>
+
+                        <p>
+                            Build an application that analyzes
+                            real-world data and generates insights.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="project-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Career Recommendation System
+                        </h3>
+
+                        <p>
+                            Create an intelligent system that recommends
+                            careers based on user profiles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             ACTION
+        ========================== -->
+
+        <div class="result-actions">
+
+            <a
+                href="index.html"
+                class="primary-btn"
+            >
+                Start Again ↻
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 CareerLens AI
+        </p>
+
+        <p>
+            Discover • Learn • Grow 🚀
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         FIREBASE + RESULT JS
+    ========================== -->
+
+    <script
+        type="module"
+        src="./result.js"
+    ></script>
+
+
+</body>
+
+</html>

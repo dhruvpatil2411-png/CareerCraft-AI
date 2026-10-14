@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Assessment | CareerLens AI</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CareerLens <span>AI</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#features">
+                How It Works
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         ASSESSMENT
+    ========================== -->
+
+    <section class="assessment">
+
+        <div class="assessment-header">
+
+            <p class="section-label">
+                STEP 1 OF 3
+            </p>
+
+            <h1>
+                Let's Discover Your
+                <span>Career Path</span>
+            </h1>
+
+            <p>
+                Tell us a little about yourself.
+                Our AI will use this information to
+                understand your career interests.
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             FORM
+        ========================== -->
+
+        <form
+            class="assessment-form"
+            id="assessmentForm"
+        >
+
+            <!-- NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- AGE -->
+
+            <div class="form-group">
+
+                <label for="age">
+                    Age
+                </label>
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Enter your age"
+                    min="13"
+                    max="60"
+                    required
+                >
+
+            </div>
+
+
+            <!-- EDUCATION -->
+
+            <div class="form-group">
+
+                <label for="education">
+                    Education
+                </label>
+
+                <select
+                    id="education"
+                    required
+                >
+
+                    <option value="">
+                        Select your education
+                    </option>
+
+                    <option value="12th">
+                        12th / Higher Secondary
+                    </option>
+
+                    <option value="bca">
+                        BCA
+                    </option>
+
+                    <option value="bsc">
+                        BSc Computer Science
+                    </option>
+
+                    <option value="btech">
+                        B.Tech / BE
+                    </option>
+
+                    <option value="bba">
+                        BBA
+                    </option>
+
+                    <option value="mca">
+                        MCA
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- INTEREST -->
+
+            <div class="form-group">
+
+                <label for="interest">
+                    What interests you most?
+                </label>
+
+                <select
+                    id="interest"
+                    required
+                >
+
+                    <option value="">
+                        Select your interest
+                    </option>
+
+                    <option value="ai">
+                        Artificial Intelligence & Data
+                    </option>
+
+                    <option value="web">
+                        Web Development
+                    </option>
+
+                    <option value="cyber">
+                        Cybersecurity
+                    </option>
+
+                    <option value="design">
+                        UI/UX & Design
+                    </option>
+
+                    <option value="business">
+                        Business & Management
+                    </option>
+
+                    <option value="finance">
+                        Finance
+                    </option>
+
+                    <option value="health">
+                        Healthcare
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- CAREER GOAL -->
+
+            <div class="form-group">
+
+                <label for="goal">
+                    What is your career goal?
+                </label>
+
+                <input
+                    type="text"
+                    id="goal"
+                    placeholder="e.g. Data Scientist, Software Developer..."
+                >
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="primary-btn"
+            >
+                Continue to Skills →
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 CareerLens AI
+        </p>
+
+        <p>
+            Discover • Learn • Grow 🚀
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const assessmentForm =
+            document.getElementById("assessmentForm");
+
+
+        assessmentForm.addEventListener(
+            "submit",
+            function(event) {
+
+                // Stop page reload
+                event.preventDefault();
+
+
+                // Collect profile information
+                const profileData = {
+
+                    name:
+                        document.getElementById("name").value,
+
+                    age:
+                        document.getElementById("age").value,
+
+                    education:
+                        document.getElementById("education").value,
+
+                    interest:
+                        document.getElementById("interest").value,
+
+                    goal:
+                        document.getElementById("goal").value
+
+                };
+
+
+                // Save profile temporarily
+                localStorage.setItem(
+                    "careerLensProfile",
+                    JSON.stringify(profileData)
+                );
+
+
+                // Move to Step 2
+                window.location.href = "skills.html";
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

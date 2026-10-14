@@ -1,0 +1,12 @@
+# Secrets and environment variables
+.env
+**/.env
+
+# Python files
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local settings
+.DS_Store

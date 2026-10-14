@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Skills Assessment | CareerLens AI</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CareerLens <span>AI</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="assessment.html">
+                Profile
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         SKILLS ASSESSMENT
+    ========================== -->
+
+    <section class="assessment">
+
+        <div class="assessment-header">
+
+            <p class="section-label">
+                STEP 2 OF 3
+            </p>
+
+            <h1>
+                Tell Us About Your
+                <span>Skills</span>
+            </h1>
+
+            <p>
+                Select the skills you currently have
+                and choose your overall skill level.
+            </p>
+
+        </div>
+
+
+
+        <!-- =========================
+             TECHNICAL SKILLS
+        ========================== -->
+
+        <div class="skill-section">
+
+            <h2>
+                💻 Technical Skills
+            </h2>
+
+            <p>
+                Select the technical skills you know.
+            </p>
+
+
+            <div class="skill-grid">
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Python"
+                    >
+
+                    <span>
+                        🐍 Python
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="JavaScript"
+                    >
+
+                    <span>
+                        ⚡ JavaScript
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="HTML & CSS"
+                    >
+
+                    <span>
+                        🌐 HTML & CSS
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="SQL"
+                    >
+
+                    <span>
+                        🗄️ SQL
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Excel"
+                    >
+
+                    <span>
+                        📊 Excel
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="AI / ML"
+                    >
+
+                    <span>
+                        🤖 AI / ML
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Networking"
+                    >
+
+                    <span>
+                        🌐 Networking
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Cloud"
+                    >
+
+                    <span>
+                        ☁️ Cloud
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             SOFT SKILLS
+        ========================== -->
+
+        <div class="skill-section">
+
+            <h2>
+                🧠 Soft Skills
+            </h2>
+
+            <p>
+                Select your personal strengths.
+            </p>
+
+
+            <div class="skill-grid">
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Communication"
+                    >
+
+                    <span>
+                        🗣️ Communication
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Problem Solving"
+                    >
+
+                    <span>
+                        🧩 Problem Solving
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Teamwork"
+                    >
+
+                    <span>
+                        🤝 Teamwork
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Leadership"
+                    >
+
+                    <span>
+                        👑 Leadership
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Creativity"
+                    >
+
+                    <span>
+                        💡 Creativity
+                    </span>
+
+                </label>
+
+
+                <label class="skill-card">
+
+                    <input
+                        type="checkbox"
+                        value="Time Management"
+                    >
+
+                    <span>
+                        ⏰ Time Management
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             SKILL LEVEL
+        ========================== -->
+
+        <div class="skill-level">
+
+            <h2>
+                📈 Overall Skill Level
+            </h2>
+
+            <p>
+                How would you describe your current skill level?
+            </p>
+
+
+            <select id="skillLevel">
+
+                <option value="">
+                    Select your level
+                </option>
+
+                <option value="beginner">
+                    🌱 Beginner
+                </option>
+
+                <option value="intermediate">
+                    🚀 Intermediate
+                </option>
+
+                <option value="advanced">
+                    🏆 Advanced
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- =========================
+             ANALYZE BUTTON
+        ========================== -->
+
+        <div class="continue-area">
+
+            <button
+                type="button"
+                id="analyzeButton"
+                class="primary-btn"
+            >
+                Analyze My Career →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 CareerLens AI
+        </p>
+
+        <p>
+            Discover • Learn • Grow 🚀
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const analyzeButton =
+            document.getElementById("analyzeButton");
+
+
+        analyzeButton.addEventListener(
+            "click",
+            function() {
+
+
+                // Get selected skills
+
+                const selectedSkills = [];
+
+
+                const checkboxes =
+                    document.querySelectorAll(
+                        '.skill-card input[type="checkbox"]'
+                    );
+
+
+                checkboxes.forEach(
+                    function(checkbox) {
+
+                        if (checkbox.checked) {
+
+                            selectedSkills.push(
+                                checkbox.value
+                            );
+
+                        }
+
+                    }
+                );
+
+
+                // Get skill level
+
+                const skillLevel =
+                    document.getElementById(
+                        "skillLevel"
+                    ).value;
+
+
+                // Check skills
+
+                if (
+                    selectedSkills.length === 0
+                ) {
+
+                    alert(
+                        "Please select at least one skill."
+                    );
+
+                    return;
+
+                }
+
+
+                // Check level
+
+                if (
+                    skillLevel === ""
+                ) {
+
+                    alert(
+                        "Please select your overall skill level."
+                    );
+
+                    return;
+
+                }
+
+
+                // Create skill data
+
+                const skillData = {
+
+                    skills:
+                        selectedSkills,
+
+                    level:
+                        skillLevel
+
+                };
+
+
+                // Save skill data
+
+                localStorage.setItem(
+                    "careerLensSkills",
+                    JSON.stringify(skillData)
+                );
+
+
+                // Go to Step 3
+
+                window.location.href =
+                    "./result.html";
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>
