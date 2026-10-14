@@ -98,7 +98,7 @@ async function getAIAnalysis() {
 
 
     const response = await fetch(
-        "http://127.0.0.1:5000/api/analyze",
+        "https://careercraft-ai-backend-2k0d.onrender.com/api/analyze",
         {
 
             method: "POST",
