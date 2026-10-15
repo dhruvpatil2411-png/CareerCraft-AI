@@ -296,7 +296,7 @@ Return ONLY valid JSON without Markdown using this structure:
 
     # Try Gemini twice for temporary overload errors.
     if client is not None:
-        for attempt in range(2):
+        for attempt in range(1):
             try:
                 print(
                     f"Sending request to {GEMINI_MODEL}, "
@@ -304,8 +304,11 @@ Return ONLY valid JSON without Markdown using this structure:
                 )
 
                 response = client.models.generate_content(
-                    model=GEMINI_MODEL,
-                    contents=prompt
+                        model=GEMINI_MODEL,
+                        contents=prompt,
+                        config={
+                            "max_output_tokens": 1200
+                        }
                 )
 
                 ai_text = getattr(response, "text", None)
